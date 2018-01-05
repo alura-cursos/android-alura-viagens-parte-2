@@ -94,6 +94,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:digits="abcdefghijklmnopqrstuvwxyzçABCDEFGHIJKLMNOPQRSTUVWXYZÇ "
         android:hint="Nome no cartão"
         app:layout_constraintEnd_toEndOf="@+id/pagamento_cvc_cartao"
         app:layout_constraintStart_toStartOf="@+id/pagamento_mes_cartao"
