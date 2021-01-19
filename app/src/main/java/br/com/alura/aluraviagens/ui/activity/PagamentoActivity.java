@@ -1,15 +1,13 @@
 package br.com.alura.aluraviagens.ui.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+import androidx.appcompat.app.AppCompatActivity;
 
 import br.com.alura.aluraviagens.R;
 import br.com.alura.aluraviagens.model.Pacote;
@@ -31,7 +29,7 @@ public class PagamentoActivity extends AppCompatActivity {
 
     private void carregaPacoteRecebido() {
         Intent intent = getIntent();
-        if(intent.hasExtra(CHAVE_PACOTE)){
+        if (intent.hasExtra(CHAVE_PACOTE)) {
             final Pacote pacote = (Pacote) intent.getSerializableExtra(CHAVE_PACOTE);
             mostraPreco(pacote);
             configuraBotao(pacote);
